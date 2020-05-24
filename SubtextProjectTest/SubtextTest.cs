@@ -1,7 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SubtextProject;
+using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 
 namespace SubtextProjectTest
 {
@@ -79,6 +81,42 @@ namespace SubtextProjectTest
             Assert.AreEqual(49, positions[1]);
             Assert.AreEqual(141, positions[2]);
             Assert.AreEqual(227, positions[3]);
+        }
+
+        [TestMethod]
+        public void RandomTest()
+        {
+            var randomStr = RandomString(100000);
+            var randomLetter = RandomLetter();
+            var subtext = new Subtext(randomStr, randomLetter.ToString());
+            var positions = subtext.FindAllSubtextPositions();
+
+            Console.WriteLine(randomStr);
+            foreach (var pos in positions)
+            {
+                Assert.AreEqual(randomLetter, randomStr[pos]);
+            }
+
+        }
+
+        public string RandomString(int size)  
+        {  
+            var builder = new StringBuilder();  
+            var random = new Random();  
+            for (int i = 0; i < size; i++)  
+            {  
+                var ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65)));  
+                builder.Append(ch);  
+            }  
+            return builder.ToString().ToLower();  
+        }  
+
+        public char RandomLetter()
+        {
+            var random = new Random();
+            // random lowercase letter
+            int a = random.Next(0, 26);
+            return (char)('a' + a);
         }
     }
 }
