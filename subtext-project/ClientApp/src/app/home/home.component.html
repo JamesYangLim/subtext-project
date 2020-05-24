@@ -1,0 +1,29 @@
+<label>
+  Text
+</label>
+<div mwlTextInputHighlightContainer>
+  <textarea mwlTextInputElement
+            rows="10"
+            class="form-control"
+            [(ngModel)]="text"
+            #textarea
+            (input)="clearTags()">
+  </textarea>
+  <mwl-text-input-highlight [tags]="tags"
+                            [tagCssClass]="'bg-blue'"
+                            [textInputElement]="textarea">
+  </mwl-text-input-highlight>
+</div>
+
+<div>
+  <label>
+    Subtext
+  </label>
+  <input type="text" [formControl]="subtext" />
+</div>
+
+<button (click)="onSubmit()">Check</button>
+
+<div>
+  <textarea class="output" readonly disabled [formControl]="positions"></textarea>
+</div>

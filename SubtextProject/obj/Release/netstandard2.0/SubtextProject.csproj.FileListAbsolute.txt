@@ -1,0 +1,9 @@
+C:\Users\limya\Source\Repos\subtext-project\SubtextProject\bin\Release\netstandard2.0\SubtextProject.deps.json
+C:\Users\limya\Source\Repos\subtext-project\SubtextProject\bin\Release\netstandard2.0\SubtextProject.dll
+C:\Users\limya\Source\Repos\subtext-project\SubtextProject\bin\Release\netstandard2.0\SubtextProject.pdb
+C:\Users\limya\Source\Repos\subtext-project\SubtextProject\obj\Release\netstandard2.0\SubtextProject.csprojAssemblyReference.cache
+C:\Users\limya\Source\Repos\subtext-project\SubtextProject\obj\Release\netstandard2.0\SubtextProject.csproj.CoreCompileInputs.cache
+C:\Users\limya\Source\Repos\subtext-project\SubtextProject\obj\Release\netstandard2.0\SubtextProject.AssemblyInfoInputs.cache
+C:\Users\limya\Source\Repos\subtext-project\SubtextProject\obj\Release\netstandard2.0\SubtextProject.AssemblyInfo.cs
+C:\Users\limya\Source\Repos\subtext-project\SubtextProject\obj\Release\netstandard2.0\SubtextProject.dll
+C:\Users\limya\Source\Repos\subtext-project\SubtextProject\obj\Release\netstandard2.0\SubtextProject.pdb
