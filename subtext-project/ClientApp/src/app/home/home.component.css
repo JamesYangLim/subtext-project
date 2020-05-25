@@ -3,9 +3,12 @@ textarea, input {
 }
 
 .text-input-highlight-container textarea {
-  resize:none;
-  overflow: hidden;
+  resize: none;
   margin-bottom: 0px;
+}
+
+.text-input-highlight-container textarea::-webkit-scrollbar {
+  width: 0;
 }
 
 .bg-blue {
@@ -14,7 +17,6 @@ textarea, input {
 
 .text-input-highlight-container {
   position: relative;
-  border: 1px solid red;
 }
 
 .text-input-highlight-container .text-input-element {

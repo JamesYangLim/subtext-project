@@ -25,5 +25,10 @@
 <button (click)="onSubmit()">Check</button>
 
 <div>
-  <textarea class="output" readonly disabled [formControl]="positions"></textarea>
+  <textarea class="output"
+            rows="6"
+            readonly
+            disabled
+            [formControl]="positions">
+  </textarea>
 </div>
